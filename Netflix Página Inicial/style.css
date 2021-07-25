@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    z-index: 100; /*exibi um elemento em cima de outro*/
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-between; /*criar espaçamento igual entres os intms*/
+    max-width: 1484px;
+    top: 28px;
+    left: 6px;
+    margin-left: 45px;
+}
+
+.header a {
+    display: inline-block; /*exibe um elemento HTML como um contêiner de bloco*/
+    background: #e50914;
+    color: white;
+    align-self: flex-start; /*As bordas da margem superior dos itens-flex são juntados com a borda superior da linha.*/
+
+    padding: 8px 19px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 20px;
+
+}
+
+.main {
+    padding-top: 4rem;
+    height: 785px;
+    background: url('/bg.jpg') center;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.main h1 {
+    font-size: 70px;
+    margin: 0;
+    max-width: 1000px;
+    height: 740;
+
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+    text-align: center;
+    position: relative;
+    color: #FFFFFF;
+
+    margin-bottom: 2px;
+}
+
+.main span {
+    font-size: 31px;
+    width: 900px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.form-cta {
+    display: grid;
+    grid-template-columns: 500px 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form-cta input {
+    padding: 20px 10px;
+    font-size: 18px;
+}
+
+.form-cta button {
+    background: #e50914;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-cta button::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url(/img/seta.svg);
+    margin-left: 20px;
+}
+
+.form-cta button:hover {
+    background: #f40612;
+}
+
+.main p {
+    font-size: 24px;
+    color: #FFF;
+}
+
+.main-child {
+    z-index: 1;
+    display: grid;
+    justify-items: center;
+}
+
+.color {
+    color: white;
+}
+
+.gradient {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+    rgba(0, 0, 0, 0.8) 0, 
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section {
+    background: black;
+    padding: 3rem 0;
+    border-top: 8px solid #222;
+}
+
+.section h1 {
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+.section p {
+    font-size: 26px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+.img-tv {
+    position: relative;
+}
+
+.img-tv img {
+    position: relative;
+    z-index: 1;
+}
+
+.video-tv {
+    position: absolute;
+    width: 400px;
+    top: 80px;
+    left: 70px;
+}
+
+.download .grid > div:first-child {
+    order: 2;
+    
+}
+
+.download .img-tv {
+    order: 1;
+
+}
+
+.device-pile .video-tv {
+    width: 340px;
+    top: 45px;
+    left: 100px;
+
+}
+
+.footer .form-cta {
+    margin-top: 0;
+}
+
+.footer {
+    padding: 4rem 0 2rem 0;
+    border-top: 8px solid #222;
+    background: black;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.footer p {
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 15px;
+}
